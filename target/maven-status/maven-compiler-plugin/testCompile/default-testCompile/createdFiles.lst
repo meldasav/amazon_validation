@@ -1,10 +1,10 @@
-utilities/Driver.class
 utilities/DropdownHandler.class
 pages/AmazonHomePage.class
-utilities/ConfigReader.class
 pages/BasePage.class
-pages/AmazonElectronicsPage.class
-utilities/AlertHandler.class
 utilities/Waiter.class
 scripts/Amazon_Test.class
+utilities/Driver.class
+utilities/ConfigReader.class
+pages/AmazonElectronicsPage.class
+utilities/AlertHandler.class
 scripts/Base.class

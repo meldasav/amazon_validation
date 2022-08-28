@@ -25,6 +25,11 @@ public class AmazonHomePage extends BasePage {
     @FindBy(css = "ul[data-menu-id='14'] li")
     public List<WebElement> mainMenuItems;
 
+
+    @FindBy(linkText = "TV & Video")
+    public WebElement tv_Video_Link;
+
+
     public void clickOnElement(String text) {
         for (WebElement element : mainMenuItems) {
             if (element.getText().equals(text)) {

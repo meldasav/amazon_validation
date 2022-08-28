@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
-public class AmazonElectronicsPage {
+public class AmazonElectronicsPage extends BasePage{
     public AmazonElectronicsPage() {
         super();
     }

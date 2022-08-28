@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.Samsung_Page;
 import utilities.Waiter;
 
 public class Amazon_Test extends Base {
@@ -35,35 +36,26 @@ public class Amazon_Test extends Base {
             }
         }
 
-        WebElement element = driver.findElement(By.linkText("TV & Video"));
-        element.click();
-        WebElement element1 = driver.findElement(By.linkText("Televisions"));
-        element1.click();
+        amazonHomePage.tv_Video_Link.click();
+        televisionVideoPage.televisionLink.click();
 
 
-        actions.moveToElement(driver.findElement(By.xpath("//span[text()='SAMSUNG']"))).perform();
+        actions.moveToElement(televisionVideoPage.samsungLink).perform();
         actions.sendKeys(Keys.PAGE_DOWN).perform();
 
 
-        WebElement element2 = driver.findElement(By.cssSelector("#s-refinements div:nth-child(20) li:nth-child(5) i"));
-        actions.moveToElement(element2);
-        Waiter.waitForVisibilityOfElement(driver, element2, 3);
-        element2.click();
+        WebElement samsung_Link_text = samsung_page.samsung_Tv_Link;
+        actions.moveToElement(samsung_Link_text);
+        Waiter.waitForVisibilityOfElement(driver, samsung_Link_text, 3);
+        samsung_Link_text.click();
 
+        samsung_page.sort_By_Price.click();
+        samsung_page.highLowPrice.click();
 
-        WebElement sortByPrice = driver.findElement(By.cssSelector("span[data-csa-interaction-events='click']"));
-        sortByPrice.click();
-
-
-        WebElement highLowPrice = driver.findElement(By.cssSelector("div[class='a-popover-inner']>ul>li:nth-child(3)"));
-        highLowPrice.click();
-
-        WebElement secondTv = driver.findElement(By.cssSelector("div[cel_widget_id='MAIN-SEARCH_RESULTS-2']"));
-        secondTv.click();
-
-        WebElement textMessage = driver.findElement(By.cssSelector("#featurebullets_feature_div h1"));
-
-        Assert.assertEquals(textMessage.getText(), "About this item");
+        samsung_result_page.samsung_Tv_Second_Result.click();
+        validate_result_page.result_Text.click();
+        WebElement actualResult = validate_result_page.result_Text;
+        Assert.assertEquals(actualResult.getText(), "About this item");
 
     }
 

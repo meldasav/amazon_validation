@@ -9,8 +9,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.asserts.SoftAssert;
-import pages.AmazonElectronicsPage;
-import pages.AmazonHomePage;
+import pages.*;
 import utilities.Driver;
 
 import java.util.concurrent.TimeUnit;
@@ -24,9 +23,10 @@ public class Base {
     JavascriptExecutor js;
     AmazonHomePage amazonHomePage;
     AmazonElectronicsPage amazonElectronicsPage;
-
-
-
+    TelevisionVideoPage televisionVideoPage;
+    Samsung_Page samsung_page;
+    Samsung_Result_Page samsung_result_page;
+    Validate_Result_Page validate_result_page;
 
     @BeforeMethod(alwaysRun = true)
     public void setup() {
@@ -38,8 +38,10 @@ public class Base {
         js = (JavascriptExecutor) driver;
         amazonHomePage = new AmazonHomePage();
         amazonElectronicsPage = new AmazonElectronicsPage();
-
-
+        televisionVideoPage = new TelevisionVideoPage();
+        samsung_page = new Samsung_Page();
+        samsung_result_page = new Samsung_Result_Page();
+        validate_result_page=new Validate_Result_Page();
 
 
     }
