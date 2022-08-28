@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="scripts.Amazon_Test" duration-ms="28468" started-at="2022-08-27T22:55:57 CDT" finished-at="2022-08-27T22:56:26 CDT">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="28468" started-at="2022-08-27T22:55:57 CDT" finished-at="2022-08-27T22:56:26 CDT">
+      <class name="scripts.Amazon_Test">
+        <test-method status="PASS" signature="setup()[pri:0, instance:scripts.Amazon_Test@5700d6b1]" name="setup" is-config="true" duration-ms="1742" started-at="2022-08-27T22:55:57 CDT" finished-at="2022-08-27T22:55:59 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TestAmazonHomePage()[pri:1, instance:scripts.Amazon_Test@5700d6b1]" name="TestAmazonHomePage" duration-ms="4206" started-at="2022-08-27T22:55:59 CDT" description="Amazon URL and Title Validation" finished-at="2022-08-27T22:56:03 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestAmazonHomePage -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts.Amazon_Test@5700d6b1]" name="teardown" is-config="true" duration-ms="3166" started-at="2022-08-27T22:56:03 CDT" finished-at="2022-08-27T22:56:07 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:scripts.Amazon_Test@5700d6b1]" name="setup" is-config="true" duration-ms="1009" started-at="2022-08-27T22:56:07 CDT" finished-at="2022-08-27T22:56:08 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="TestTV_Appliances_Electronics()[pri:2, instance:scripts.Amazon_Test@5700d6b1]" name="TestTV_Appliances_Electronics" duration-ms="14943" started-at="2022-08-27T22:56:08 CDT" description="Amazon hamburger menu items Validation" finished-at="2022-08-27T22:56:23 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestTV_Appliances_Electronics -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:scripts.Amazon_Test@5700d6b1]" name="teardown" is-config="true" duration-ms="3379" started-at="2022-08-27T22:56:23 CDT" finished-at="2022-08-27T22:56:26 CDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- scripts.Amazon_Test -->
+    </test> <!-- Command line test -->
+  </suite> <!-- scripts.Amazon_Test -->
+</testng-results>
